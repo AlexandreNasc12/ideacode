@@ -5,6 +5,10 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+// Configuração do middleware de erros
+app.UseExceptionHandler("/Home/Error");
+app.UseStatusCodePagesWithReExecute("/Home/StatusCode", "?statusCode={0}");
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

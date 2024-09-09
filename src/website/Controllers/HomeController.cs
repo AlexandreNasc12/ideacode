@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using website.Models;
 
 namespace website.Controllers;
@@ -30,6 +31,18 @@ public class HomeController : Controller
     public IActionResult AplicacoesLegadas() => View();
 
     public IActionResult Refatoracao() => View();
+
+    [Route("Home/StatusCode")]
+    public IActionResult StatusCode(int statusCode)
+    {
+        // Exibir uma página de erro específica com base no status code
+        if (statusCode == 404)
+        {
+            return View("Error404");
+        }
+
+        return View("Error"); // Página de erro genérica
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
