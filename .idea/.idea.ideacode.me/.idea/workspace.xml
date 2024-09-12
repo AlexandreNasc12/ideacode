@@ -11,11 +11,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b846f47-2407-42c8-8059-8bb2a0941b0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ideacode.core/Utils/StringUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ideacode.core/ValueObjects/Cnpj.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ideacode.core/ValueObjects/Cpf.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/ideacode.api/Domain/Contato.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ideacode.me.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ideacode.me.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Communication/ResponseResult.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Data/IRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Data/IUnitOfWorks.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Data/PagedResult.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/DomainObjects/Aggregate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/DomainObjects/DomainException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/DomainObjects/Entity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/DomainObjects/IAggregateRoot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/DomainObjects/Identidade.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/DomainObjects/Paginacao.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/EmailConfiguracao/AutenticacaoSmtpServer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/EmailConfiguracao/DisparadorDeEmails.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/EmailConfiguracao/EmailConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/EmailConfiguracao/ServicoDeEmail.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/EmailConfiguracao/SmtpAmazonService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/EmailConfiguracao/SmtpSendBlue.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/EmailConfiguracao/SmtpService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Extensions/EnumerableExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Extensions/GerenciarEnuns.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Extensions/PollyExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Helpers/Criptograph.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Helpers/DataHoraDeBrasilia.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Helpers/ExcelIngoreAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Helpers/ManipularListas.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Helpers/NumerosRomanos.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Helpers/ZonaDeTempo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Mediator/IMediatorHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Mediator/MediatorHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/Command.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommandHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/DomainEvents/DomainEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/AlunoAbaixoMediaIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/AlunoInfrequenteIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/BaixaDoEstoqueIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/BoletimAtualizadoResponseIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/BoletimLegadoParanaIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/CartaoRespostaEnviadoIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/DisciplinaInfrequente.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/EstatisticaDeCartaoPostadoIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/FrequenciaLancadaIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/FrequenciaReconhecidaIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/GerarBoletimIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/GerarRestricoesIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/IntegracaoDeFrequenciaServicoExternoIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/IntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/LogRegistradoIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/MapaDeNotasAtualizadoIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/NotificationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/PosicaoPreMatriculaAtualizadaIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/PresencaIndividualSolicitadaIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/Relatorio/RelatorioCensoAlunoEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/Relatorio/RelatorioEvents.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/RemoverAlertaAbaixoMediaIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/RequisicaoDeMatriculaIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/RequisicaoDeMatriculaResponseIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/ResponseMessage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/SalaDependenciasIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/SolicitacaoCanceladaIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/TurmaCensoIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/UsuarioAtualizadoIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/UsuarioCensoIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/CommonMessages/IntegrationEvents/UsuarioRegistradoIntegrationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/Error.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/Errors/CensoError.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/Event.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Messages/Message.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/Utils/StringUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/ValueObjects/Cnpj.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/ValueObjects/Cpf.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ideacode.core/ideacode.core.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,13 +91,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/ideacode.core/DomainObjects/Aggregate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/ideacode.core/DomainObjects/BsonCollectionAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/ideacode.core/DomainObjects/Entity.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/ideacode.core/ValueObjects/Cnpj.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/ideacode.core/ValueObjects/Cpf.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="Toolset" />
@@ -46,18 +106,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/alexandre/IdeaCode/Site/src/buildingblocks/ideacode.core/ideacode.core.csproj",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.website: http">
     <configuration name="ideacode.api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" />
@@ -129,7 +190,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725842295197</updated>
       <workItem from="1725842297123" duration="351000" />
-      <workItem from="1726106088099" duration="1636000" />
+      <workItem from="1726106088099" duration="3351000" />
     </task>
     <servers />
   </component>
