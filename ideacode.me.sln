@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{66
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ideacode.api", "src\services\ideacode.api\ideacode.api.csproj", "{02F93A63-E116-4514-902F-B406A97871EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ideacode.core", "src\ideacode.core\ideacode.core.csproj", "{45DD0AF1-3FD6-4A85-AFB1-BB043DDC3129}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,10 +30,15 @@ Global
 		{02F93A63-E116-4514-902F-B406A97871EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02F93A63-E116-4514-902F-B406A97871EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02F93A63-E116-4514-902F-B406A97871EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45DD0AF1-3FD6-4A85-AFB1-BB043DDC3129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45DD0AF1-3FD6-4A85-AFB1-BB043DDC3129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45DD0AF1-3FD6-4A85-AFB1-BB043DDC3129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45DD0AF1-3FD6-4A85-AFB1-BB043DDC3129}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8D4B125B-360C-4684-BF0C-5BF79CDA5928} = {097B52BF-32D1-405E-96E4-78A4DE6E507E}
 		{66D874D3-40BC-40CE-879D-9A643142065F} = {097B52BF-32D1-405E-96E4-78A4DE6E507E}
 		{02F93A63-E116-4514-902F-B406A97871EC} = {66D874D3-40BC-40CE-879D-9A643142065F}
+		{45DD0AF1-3FD6-4A85-AFB1-BB043DDC3129} = {097B52BF-32D1-405E-96E4-78A4DE6E507E}
 	EndGlobalSection
 EndGlobal
