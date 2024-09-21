@@ -44,6 +44,12 @@ public class HomeController : Controller
         return View("Error"); // Página de erro genérica
     }
 
+    [Route("Home/contato")]
+    public async Task<IActionResult> EnviarContato()
+    {
+        return Ok();
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

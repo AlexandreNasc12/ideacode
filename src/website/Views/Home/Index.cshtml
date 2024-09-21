@@ -283,7 +283,7 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+            <form action="Home/contato" method="post" class="php-email-form" data-aos="fade-up"
               data-aos-delay="200">
               <div class="row gy-4">
 
@@ -295,7 +295,11 @@
                   <input type="email" class="form-control" name="email" placeholder="Seu Email" required="">
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-6 ">
+                  <input type="text" class="form-control" id="telefone" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" name="telefone" placeholder="Telefone" required="">
+                </div>
+
+                <div class="col-md-6">
                   <input type="text" class="form-control" name="empresa" placeholder="Empresa" required="">
                 </div>
 

@@ -10,12 +10,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b846f47-2407-42c8-8059-8bb2a0941b0a" name="Changes" comment="chore: implementando inputModel">
-      <change afterPath="$PROJECT_DIR$/src/services/ideacode.api/Controllers/ContatoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/ideacode.api/InputModel/ContatoInputModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/website/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/Views/Home/Index.cshtml" afterDir="false" />
-    </list>
+    <list default="true" id="7b846f47-2407-42c8-8059-8bb2a0941b0a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,6 +120,7 @@
       <workItem from="1725842297123" duration="351000" />
       <workItem from="1726106088099" duration="7186000" />
       <workItem from="1726178669577" duration="922000" />
+      <workItem from="1726278912486" duration="179000" />
     </task>
     <servers />
   </component>
