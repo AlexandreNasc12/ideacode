@@ -1,6 +1,5 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
 using website.Models;
 
 namespace website.Controllers;
@@ -45,9 +44,9 @@ public class HomeController : Controller
     }
 
     [Route("Home/contato")]
-    public async Task<IActionResult> EnviarContato()
+    public async Task<IActionResult> EnviarContato(ContatoInputModel model)
     {
-        return Ok();
+        return Ok("OK");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

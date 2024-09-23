@@ -1,5 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
+  <ItemGroup>
+    <ProjectReference Include="..\buildingblocks\ideacode.core\ideacode.core.csproj" />
+    <ProjectReference Include="..\buildingblocks\ideacode.api.core\ideacode.api.core.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>disable</Nullable>
