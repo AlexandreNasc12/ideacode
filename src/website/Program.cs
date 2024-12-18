@@ -1,7 +1,18 @@
-var builder = WebApplication.CreateBuilder(args);
+using ideacode.core.Extensions;
+using Polly;
+using website.Configuration;
+using website.Services;
 
+var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.Configure<HttpUrls>(configuration.GetSection("HttpUrls"));
+
+builder.Services.AddHttpClient<IContatoServices, ContatoServices>()
+    .AddPolicyHandler(PollyExtensions.EsperarTentar())
+    .AddTransientHttpErrorPolicy(
+        p => p.CircuitBreakerAsync(5, TimeSpan.FromSeconds(30)));
 
 var app = builder.Build();
 

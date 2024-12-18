@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using website.Models;
+using website.Services;
 
 namespace website.Controllers;
 
@@ -44,9 +45,27 @@ public class HomeController : Controller
     }
 
     [Route("Home/contato")]
-    public async Task<IActionResult> EnviarContato(ContatoInputModel model)
+    public async Task<IActionResult> EnviarContato(
+        [FromServices] IContatoServices contatoServices,
+        ContatoInputModel model)
     {
-        return Ok("OK");
+        if (!ModelState.IsValid) return BadRequest("Houve um erro no envio do contato!");
+        
+        var contato = new ContatoDto()
+        {
+            Nome = model.Nome,
+            Email = model.Email,
+            Telefone = model.Telefone,
+            Assunto = model.subject,
+            Empresa = model.Empresa,
+            Mensagem = model.Message
+        };
+
+        var result = await contatoServices.EnviarContato(contato);
+        
+        if (result.success) return Ok("Seu contato foi enviado com sucesso!");
+        
+        return BadRequest("Houve um erro no serviço de envio do contato!");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -10,11 +10,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b846f47-2407-42c8-8059-8bb2a0941b0a" name="Changes" comment="" />
+    <list default="true" id="7b846f47-2407-42c8-8059-8bb2a0941b0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/website/Configuration/HttpUrls.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/website/Services/ContatoDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/website/Services/IContatoServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/buildingblocks/ideacode.api.core/Service.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/buildingblocks/ideacode.api.core/Service.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/website/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/website/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/website/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/website/website.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/website.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,20 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alexandre/IdeaCode/Site/src/buildingblocks/ideacode.core/ideacode.core.csproj&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.ideacode.api: http.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/alexandre/IdeaCode/Site/src/buildingblocks/ideacode.core/ideacode.core.csproj",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.website: http">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.ideacode.api: http">
     <configuration name="ideacode.api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -121,6 +137,7 @@
       <workItem from="1726106088099" duration="7186000" />
       <workItem from="1726178669577" duration="922000" />
       <workItem from="1726278912486" duration="179000" />
+      <workItem from="1734483503020" duration="5007000" />
     </task>
     <servers />
   </component>
@@ -130,9 +147,40 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="chore: implementando inputModel" />
     <option name="LAST_COMMIT_MESSAGE" value="chore: implementando inputModel" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/services/ideacode.api/Controllers/ContatoController.cs</url>
+          <line>34</line>
+          <properties documentPath="$PROJECT_DIR$/src/services/ideacode.api/Controllers/ContatoController.cs" containingFunctionPresentation="Method 'AdicionarContato'">
+            <startOffsets>
+              <option value="998" />
+            </startOffsets>
+            <endOffsets>
+              <option value="999" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/website/Controllers/HomeController.cs</url>
+          <line>50</line>
+          <properties documentPath="$PROJECT_DIR$/src/website/Controllers/HomeController.cs" containingFunctionPresentation="Method 'EnviarContato'">
+            <startOffsets>
+              <option value="1173" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1174" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

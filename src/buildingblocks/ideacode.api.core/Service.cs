@@ -4,17 +4,8 @@ using Newtonsoft.Json;
 
 namespace ideacode.api.core
 {
-    public abstract class HttpService
+    public abstract class Service
     {
-        protected readonly HttpClient _httpClient;
-
-        public HttpService()
-        {
-            _httpClient = new HttpClient();
-            _httpClient.DefaultRequestHeaders.Accept.Clear();
-            _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-        }
-
         protected StringContent ObterConteudo(object dado)
         {
             return new StringContent(
