@@ -17,6 +17,7 @@ stages:
       name: Default
     steps:
     - task: DockerCompose@1
+      displayName: 'Build services'
       inputs:
         containerregistrytype: 'Container Registry'
         dockerRegistryEndpoint: 'DockerHub-IdeaCode'
@@ -27,6 +28,7 @@ stages:
         includeSourceTags: true
         includeLatestTag: true
     - task: DockerCompose@1
+      displayName: 'Subindo imagens docker'
       inputs:
         containerregistrytype: 'Container Registry'
         dockerRegistryEndpoint: 'DockerHub-IdeaCode'
