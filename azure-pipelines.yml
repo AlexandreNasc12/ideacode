@@ -20,7 +20,7 @@ stages:
       inputs:
         containerregistrytype: 'Container Registry'
         dockerRegistryEndpoint: 'DockerHub-IdeaCode'
-        dockerComposeFile: '/docker/ideacode-compose.yaml'
+        dockerComposeFile: 'docker/ideacode-compose.yaml'
         action: 'Build services'
         additionalImageTags: '$(Build.BuildId)'
         includeSourceTags: true
@@ -29,7 +29,7 @@ stages:
       inputs:
         containerregistrytype: 'Container Registry'
         dockerRegistryEndpoint: 'DockerHub-IdeaCode'
-        dockerComposeFile: '/docker/ideacode-compose.yaml'
+        dockerComposeFile: 'docker/ideacode-compose.yaml'
         action: 'Push service images'
         additionalImageTags: '$(Build.BuildId)'
         includeSourceTags: true
