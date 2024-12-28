@@ -63,7 +63,7 @@ public class HomeController : Controller
 
         var result = await contatoServices.EnviarContato(contato);
         
-        if (result.success) return Ok("Seu contato foi enviado com sucesso!");
+        if (result.success) return Ok("OK");
         
         return BadRequest("Houve um erro no serviço de envio do contato!");
     }

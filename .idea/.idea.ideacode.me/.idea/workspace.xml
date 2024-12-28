@@ -11,15 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b846f47-2407-42c8-8059-8bb2a0941b0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/website/Configuration/HttpUrls.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/website/Services/ContatoDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/website/Services/IContatoServices.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ideacode-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/ideacode.api/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/website/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/buildingblocks/ideacode.api.core/Service.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/buildingblocks/ideacode.api.core/Service.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ideacode.api/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/website/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/website/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/website/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/website/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/Views/Home/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/website/website.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/website/website.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Launch Settings Profile.ideacode.api: http.executor": "Debug",
+    ".NET Launch Settings Profile.website: https.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -63,7 +64,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.ideacode.api: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.website: https">
     <configuration name="ideacode.api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -124,6 +125,52 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ideacode.api/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="ideacode.api" />
+          <option name="containerName" value="ideacode.api" />
+          <option name="contextFolderPath" value="$PROJECT_DIR$" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/services/ideacode.api/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="website/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="website" />
+          <option name="containerName" value="website" />
+          <option name="contextFolderPath" value="$PROJECT_DIR$" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/website/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -137,8 +184,19 @@
       <workItem from="1726106088099" duration="7186000" />
       <workItem from="1726178669577" duration="922000" />
       <workItem from="1726278912486" duration="179000" />
-      <workItem from="1734483503020" duration="5007000" />
+      <workItem from="1734483503020" duration="6041000" />
+      <workItem from="1734631717733" duration="388000" />
+      <workItem from="1735339690726" duration="6105000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: implementando formulário de contato">
+      <option name="closed" value="true" />
+      <created>1734492778770</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734492778770</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +207,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="chore: implementando inputModel" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: implementando inputModel" />
+    <MESSAGE value="feat: implementando formulário de contato" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implementando formulário de contato" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -166,19 +225,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/website/Controllers/HomeController.cs</url>
-          <line>50</line>
-          <properties documentPath="$PROJECT_DIR$/src/website/Controllers/HomeController.cs" containingFunctionPresentation="Method 'EnviarContato'">
-            <startOffsets>
-              <option value="1173" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1174" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
