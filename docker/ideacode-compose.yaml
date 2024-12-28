@@ -1,6 +1,6 @@
 services:
   api-ideacode:
-    image: api-ideacode:1.0.0
+    image: api-ideacode
     container_name: api-ideacode
     build:
       context: ../src
@@ -14,7 +14,7 @@ services:
        CUSTOMCONNSTR_DefaultConnection: Server=database-ideacode;Database=SiteIdeaCodeDB;MultipleActiveResultSets=true;User Id=sa;Password=Xbaybxdb$;Connection Timeout=3500;Trusted_Connection=True;TrustServerCertificate=True;Encrypt=Optional;Integrated Security=False
         
   site-ideacode:
-    image: site-ideacode:1.0.0
+    image: site-ideacode
     container_name: site-ideacode
     build:
       context: ../src
