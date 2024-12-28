@@ -21,6 +21,7 @@ stages:
         containerregistrytype: 'Container Registry'
         dockerRegistryEndpoint: 'DockerHub-IdeaCode'
         dockerComposeFile: 'docker/ideacode-compose.yaml'
+        projectName: 'ideacodewebsite'
         action: 'Build services'
         additionalImageTags: '$(Build.BuildId)'
         includeSourceTags: true
@@ -30,6 +31,7 @@ stages:
         containerregistrytype: 'Container Registry'
         dockerRegistryEndpoint: 'DockerHub-IdeaCode'
         dockerComposeFile: 'docker/ideacode-compose.yaml'
+        projectName: 'ideacodewebsite'
         action: 'Push service images'
         additionalImageTags: '$(Build.BuildId)'
         includeSourceTags: true
