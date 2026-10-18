@@ -17,9 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b846f47-2407-42c8-8059-8bb2a0941b0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ideacode.api/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,7 @@
     <setting file="mock:///home/alexandre/Portais/Site/src/services/ideacode.api/Infra/Mappings/ContatoMapping.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/alexandre/Portais/Site/src/services/ideacode.api/Migrations/IdeaCodeContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/alexandre/Portais/Site/src/services/ideacode.api/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/alexandre/Portais/Site/src/services/ideacode.api/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -46,23 +45,23 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0006905340044052" />
-      <entry key="MS500" value="1.2415822550763638" />
-      <entry key="S2" value="2.086578631700714" />
-      <entry key="S5" value="2.903194081369968" />
-      <entry key="S10" value="4.0536011812769" />
-      <entry key="S30" value="11.704184680075539" />
-      <entry key="S60" value="19.75604005040752" />
-      <entry key="M2" value="26.718982574979574" />
-      <entry key="M5" value="32.39618502942062" />
-      <entry key="M10" value="34.60682992027925" />
-      <entry key="M15" value="35.383512723795405" />
-      <entry key="M30" value="36.18103914727189" />
-      <entry key="H1" value="36.58780267218617" />
-      <entry key="H2" value="36.793217351222026" />
-      <entry key="H4" value="36.89643708067636" />
-      <entry key="D1" value="36.9827156298226" />
-      <entry key="W1" value="36.997530218689185" />
+      <entry key="MS100" value="1.0000001460155337" />
+      <entry key="MS500" value="1.0596313417893657" />
+      <entry key="S2" value="2.046059507952616" />
+      <entry key="S5" value="3.9571401002987763" />
+      <entry key="S10" value="6.033535043529852" />
+      <entry key="S30" value="8.803755342214409" />
+      <entry key="S60" value="9.812026728119042" />
+      <entry key="M2" value="10.391967416825631" />
+      <entry key="M5" value="12.157550340901418" />
+      <entry key="M10" value="18.09499197381781" />
+      <entry key="M15" value="23.36442800735429" />
+      <entry key="M30" value="32.41882337385488" />
+      <entry key="H1" value="39.15767930313882" />
+      <entry key="H2" value="43.27892221579874" />
+      <entry key="H4" value="45.559288833308386" />
+      <entry key="D1" value="47.581609603202644" />
+      <entry key="W1" value="47.939939394746396" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -84,23 +83,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9336862765114988" />
-      <entry key="MS500" value="1.2251278261540546" />
-      <entry key="S2" value="2.0798709787898106" />
-      <entry key="S5" value="2.899476515443927" />
-      <entry key="S10" value="4.051078821012261" />
-      <entry key="S30" value="11.701895680496484" />
-      <entry key="S60" value="19.754111706292292" />
-      <entry key="M2" value="26.717674948391" />
-      <entry key="M5" value="32.395549143936535" />
-      <entry key="M10" value="34.60648992986795" />
-      <entry key="M15" value="35.38328089313651" />
-      <entry key="M30" value="36.180920575752936" />
-      <entry key="H1" value="36.58774270874806" />
-      <entry key="H2" value="36.7931871983509" />
-      <entry key="H4" value="36.89642196123444" />
-      <entry key="D1" value="36.98271310392388" />
-      <entry key="W1" value="36.99752985769953" />
+      <entry key="MS100" value="0.9526381352539685" />
+      <entry key="MS500" value="1.0493033408255246" />
+      <entry key="S2" value="2.04083433268422" />
+      <entry key="S5" value="3.9530353022265694" />
+      <entry key="S10" value="6.030372782022657" />
+      <entry key="S30" value="8.802197393126555" />
+      <entry key="S60" value="9.81115487436621" />
+      <entry key="M2" value="10.391504630035628" />
+      <entry key="M5" value="12.157330962770933" />
+      <entry key="M10" value="18.09482400624446" />
+      <entry key="M15" value="23.364281502064834" />
+      <entry key="M30" value="32.418720441060486" />
+      <entry key="H1" value="39.15761678786105" />
+      <entry key="H2" value="43.278887579025266" />
+      <entry key="H4" value="45.55927057997009" />
+      <entry key="D1" value="47.58160642278026" />
+      <entry key="W1" value="47.93993893690207" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -329,7 +328,8 @@
     <MESSAGE value="feat: Migrando banco de dados para Postgress, inserindo nova seção de IA" />
     <MESSAGE value="feat: Atualizando o layout" />
     <MESSAGE value="feat: Adicionando IA Corporativa" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Adicionando IA Corporativa" />
+    <MESSAGE value="fix: Implementando secrets" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Implementando secrets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
