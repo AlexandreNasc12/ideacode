@@ -32,6 +32,8 @@ public class HomeController : Controller
 
     public IActionResult Refatoracao() => View();
 
+    public IActionResult IaCorporativa() => View();
+
     [Route("Home/StatusCode")]
     public IActionResult StatusCode(int statusCode)
     {
