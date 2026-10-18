@@ -37,14 +37,16 @@ namespace ideacode.core.DomainObjects
             ValidationResult.Errors.Add(new ValidationFailure(string.Empty,mensagem));
         }
 
+        // Datas são persistidas em UTC (Kind=Utc) e convertidas para Brasília
+        // apenas na exibição, seguindo a convenção "timestamp with time zone" do PostgreSQL.
         public string DataDeAlteracaoFormatada
         {
             get
             {
-                if (DataDeAlteracao != null)
-                    return DataDeAlteracao.ToString("dd/MM/yyyy");
-                else
+                if (DataDeAlteracao == default(DateTime))
                     return null;
+
+                return DataHoraDeBrasilia.Set(DataDeAlteracao).ToString("dd/MM/yyyy");
             }
         }
 
@@ -52,10 +54,10 @@ namespace ideacode.core.DomainObjects
         {
             get
             {
-                if (DataDeCadastro != null)
-                    return DataDeCadastro.ToString("dd/MM/yyyy");
-                else
+                if (DataDeCadastro == default(DateTime))
                     return null;
+
+                return DataHoraDeBrasilia.Set(DataDeCadastro).ToString("dd/MM/yyyy");
             }
         }
 
@@ -65,15 +67,27 @@ namespace ideacode.core.DomainObjects
 
         public void RestaurarDaLixeira() => Lixeira = false;
 
-        public void SetDataDeAlteracao() => DataDeAlteracao = DataHoraDeBrasilia.Get();
+        public void SetDataDeAlteracao() => DataDeAlteracao = DateTime.UtcNow;
 
-        public void SetDataDeCadastro(DateTime data) => DataDeCadastro = data;
+        public void SetDataDeCadastro(DateTime data) => DataDeCadastro = ParaUtc(data);
+
+        // Normaliza para UTC antes da persistência: valores Kind=Local são convertidos
+        // e valores Kind=Unspecified são tratados como UTC.
+        private static DateTime ParaUtc(DateTime data)
+        {
+            return data.Kind switch
+            {
+                DateTimeKind.Local => data.ToUniversalTime(),
+                DateTimeKind.Unspecified => DateTime.SpecifyKind(data, DateTimeKind.Utc),
+                _ => data
+            };
+        }
 
         public Entity()
         {
             Id = Guid.NewGuid();
-            DataDeCadastro = DataHoraDeBrasilia.Get();
-            DataDeAlteracao = DataHoraDeBrasilia.Get();
+            DataDeCadastro = DateTime.UtcNow;
+            DataDeAlteracao = DateTime.UtcNow;
 
             ValidationResult = new ValidationResult();
         }

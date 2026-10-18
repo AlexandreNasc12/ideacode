@@ -2,7 +2,6 @@ using FluentValidation.Results;
 using ideacode.api.Domain;
 using ideacode.core.Data;
 using ideacode.core.DomainObjects;
-using ideacode.core.Helpers;
 using ideacode.core.Mediator;
 using ideacode.core.Messages;
 using Microsoft.EntityFrameworkCore;
@@ -31,20 +30,18 @@ public class IdeaCodeContext : DbContext, IUnitOfWorks
     
     public async Task<bool> Commit()
     {
-        var cetZone = ZonaDeTempo.ObterZonaDeTempo();
-
+        // Datas de auditoria gravadas em UTC (Kind=Utc) para compatibilizar com o
+        // tipo "timestamp with time zone" do PostgreSQL; a exibição converte para Brasília.
         foreach (var entry in ChangeTracker.Entries()
                      .Where(entry => entry.Entity.GetType().GetProperty("DataDeCadastro") != null))
         {
             if (entry.State == EntityState.Added)
-                entry.Property("DataDeCadastro").CurrentValue =
-                    TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, cetZone);
+                entry.Property("DataDeCadastro").CurrentValue = DateTime.UtcNow;
 
             if (entry.State == EntityState.Modified)
             {
                 entry.Property("DataDeCadastro").IsModified = false;
-                entry.Property("DataDeAlteracao").CurrentValue =
-                    TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, cetZone);
+                entry.Property("DataDeAlteracao").CurrentValue = DateTime.UtcNow;
             }
         }
         

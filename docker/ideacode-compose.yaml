@@ -11,7 +11,7 @@ services:
     environment:
        ASPNETCORE_ENVIRONMENT: Production
        ASPNETCORE_URLS: http://+:8081;http://+8081
-       CUSTOMCONNSTR_DefaultConnection: Server=database-ideacode;Database=SiteIdeaCodeDB;MultipleActiveResultSets=true;User Id=sa;Password=Xbaybxdb$;Connection Timeout=3500;Trusted_Connection=True;TrustServerCertificate=True;Encrypt=Optional;Integrated Security=False
+       ConnectionStrings__DefaultConnection: Host=database-ideacode;Port=5432;Database=SiteIdeaCodeDB;Username=ideacode;Password=Xbaybxdb$;Timeout=30
         
   site-ideacode:
     image: site-ideacode
@@ -30,12 +30,19 @@ services:
       - api-ideacode
   
   database-ideacode:
-    image: mcr.microsoft.com/mssql/server:2017-latest
+    image: postgres:16-alpine
     container_name: ideacode-database-site
+    restart: always
     expose:
-      - 1433
+      - 5432
+    ports:
+      - "5432:5432"
     environment:
-      SA_PASSWORD: "Xbaybxdb$"
-      ACCEPT_EULA: "Y"
+      POSTGRES_DB: "SiteIdeaCodeDB"
+      POSTGRES_USER: "ideacode"
+      POSTGRES_PASSWORD: "Xbaybxdb$"
     volumes:
-      - ./sqlvolume:/var/opt/mssql
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

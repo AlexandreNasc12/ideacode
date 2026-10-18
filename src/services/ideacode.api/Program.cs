@@ -13,8 +13,8 @@ builder.Services.AddControllers();
 
 var configuration = builder.Configuration;
 
-builder.Services.AddDbContext<IdeaCodeContext>(options => 
-    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<IdeaCodeContext>(options =>
+    options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IMediatorHandler, MediatorHandler>();
 builder.Services.AddMediatR(typeof(Program));

@@ -1,5 +1,4 @@
-﻿using ideacode.core.Helpers;
-using MediatR;
+﻿using MediatR;
 
 namespace ideacode.core.Messages
 {
@@ -9,7 +8,7 @@ namespace ideacode.core.Messages
 
         protected Event()
         {
-            Timestamp = DataHoraDeBrasilia.Get();
+            Timestamp = DateTime.UtcNow;
         }
     }
 }
