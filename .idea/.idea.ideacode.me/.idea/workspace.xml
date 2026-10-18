@@ -17,17 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b846f47-2407-42c8-8059-8bb2a0941b0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ideacode.me/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/ideacode-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/ideacode-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/buildingblocks/ideacode.core/DomainObjects/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/buildingblocks/ideacode.core/DomainObjects/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/buildingblocks/ideacode.core/Messages/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/buildingblocks/ideacode.core/Messages/Event.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/Infra/Data/IdeaCodeContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ideacode.api/Infra/Data/IdeaCodeContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/Infra/Mappings/ContatoMapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ideacode.api/Infra/Mappings/ContatoMapping.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/Migrations/20240912034636_init-project-ideadb.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/Migrations/20240912034636_init-project-ideadb.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/Migrations/IdeaCodeContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ideacode.api/Migrations/IdeaCodeContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ideacode.api/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ideacode.api/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" afterDir="false" />
     </list>
@@ -43,6 +33,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///home/alexandre/Portais/Site/src/buildingblocks/ideacode.core/Messages/Event.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/alexandre/Portais/Site/src/services/ideacode.api/Infra/Data/IdeaCodeContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/alexandre/Portais/Site/src/services/ideacode.api/Infra/Mappings/ContatoMapping.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/alexandre/Portais/Site/src/services/ideacode.api/Migrations/IdeaCodeContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/alexandre/Portais/Site/src/services/ideacode.api/Program.cs" root0="SKIP_HIGHLIGHTING" />
@@ -52,6 +44,65 @@
     <urls />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0006905340044052" />
+      <entry key="MS500" value="1.2415822550763638" />
+      <entry key="S2" value="2.086578631700714" />
+      <entry key="S5" value="2.903194081369968" />
+      <entry key="S10" value="4.0536011812769" />
+      <entry key="S30" value="11.704184680075539" />
+      <entry key="S60" value="19.75604005040752" />
+      <entry key="M2" value="26.718982574979574" />
+      <entry key="M5" value="32.39618502942062" />
+      <entry key="M10" value="34.60682992027925" />
+      <entry key="M15" value="35.383512723795405" />
+      <entry key="M30" value="36.18103914727189" />
+      <entry key="H1" value="36.58780267218617" />
+      <entry key="H2" value="36.793217351222026" />
+      <entry key="H4" value="36.89643708067636" />
+      <entry key="D1" value="36.9827156298226" />
+      <entry key="W1" value="36.997530218689185" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9336862765114988" />
+      <entry key="MS500" value="1.2251278261540546" />
+      <entry key="S2" value="2.0798709787898106" />
+      <entry key="S5" value="2.899476515443927" />
+      <entry key="S10" value="4.051078821012261" />
+      <entry key="S30" value="11.701895680496484" />
+      <entry key="S60" value="19.754111706292292" />
+      <entry key="M2" value="26.717674948391" />
+      <entry key="M5" value="32.395549143936535" />
+      <entry key="M10" value="34.60648992986795" />
+      <entry key="M15" value="35.38328089313651" />
+      <entry key="M30" value="36.180920575752936" />
+      <entry key="H1" value="36.58774270874806" />
+      <entry key="H2" value="36.7931871983509" />
+      <entry key="H4" value="36.89642196123444" />
+      <entry key="D1" value="36.98271310392388" />
+      <entry key="W1" value="36.99752985769953" />
+    </decayedShown>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="Toolset" />
   </component>
@@ -93,7 +144,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.website: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.ideacode.api: https">
     <configuration name="ideacode.api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/services/ideacode.api/ideacode.api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -275,7 +326,10 @@
     <MESSAGE value="feat: implementando formulário de contato" />
     <MESSAGE value="ci: ajuste no docker-compose" />
     <MESSAGE value="ci: docker-compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="ci: docker-compose" />
+    <MESSAGE value="feat: Migrando banco de dados para Postgress, inserindo nova seção de IA" />
+    <MESSAGE value="feat: Atualizando o layout" />
+    <MESSAGE value="feat: Adicionando IA Corporativa" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Adicionando IA Corporativa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
